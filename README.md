@@ -57,7 +57,7 @@ The Todo App allows you to easily organize your tasks by dragging and dropping t
 
 ### Usage of localStorage
 
-The Todo App utilizes localStorage to persist task data locally in the user's browser. This allows users to access their tasks even after refreshing the page or closing the browser. Here's how localStorage is used in the application:
+The Todo App utilizes localStorage to persist task data locally in the user's browser. This allows users to access their tasks after refreshing the page or closing the browser. Here's how localStorage is used in the application:
 
 1. **Initial Loading:**
    - When the Todo App is loaded, it checks localStorage for any existing task data.
@@ -78,16 +78,16 @@ The Todo App utilizes localStorage to persist task data locally in the user's br
 
 ![localStorage2](https://github.com/Aditya-Choudhary0/QuestLabTodo/assets/113030961/f8545eb6-5f43-49d8-a1c8-012bef060958)
 
-By using localStorage, the Todo App provides a seamless and persistent task management experience for users.
+Using localStorage, the Todo App provides users with a seamless and persistent task management experience.
 
 ### Add New Task
 
-In the Todo category, you can add new tasks using the input form.
+You can add new tasks using the input form in the Todo category.
 Enter the task label in the input field and click the "Add Task" button to add it to the Todo list.
 
 ### Remove Task
 
-Each task has a "Remove" button that allows you to delete the task from the list.
+Each task has a "Remove" button that lets you delete the task from the list.
 ![remove](https://github.com/Aditya-Choudhary0/QuestLabTodo/assets/113030961/5749cff3-37c8-4e23-81ea-38155c90b655)
 
 After clicking the remove button the existing task is removed from the list in the local system.
@@ -95,3 +95,47 @@ After clicking the remove button the existing task is removed from the list in t
 ## Responsive Design
 
 The Todo App is designed to be responsive and work seamlessly across different screen sizes. The layout adjusts dynamically based on the screen width, ensuring a consistent user experience on desktop, tablet, and mobile devices.
+
+## [Video Presentation and detailed walkthrough of the Web Application](https://drive.google.com/file/d/1Ry4cjb_tI6l6H2uHfjy3AHsXv6RMF3uA/view?usp=sharing)
+
+## How to Contribute
+
+### Fork the Repository
+1. Click the "Fork" button at the top right of the repository page.
+
+### Clone Your Fork
+```bash
+git clone https://github.com/your-username/groovy-airplane-6414.git
+```
+Create a New Branch
+
+```bash
+
+git checkout -b my-changes
+```
+Make Your Changes
+
+Make your changes to the codebase. Ensure you follow any coding standards or guidelines established in the project.
+Commit Your Changes
+
+```bash
+
+git add .
+git commit -m "Description of your changes"
+```
+Push Your Changes
+
+```bash
+
+git push origin my-changes
+```
+Create a Pull Request
+
+    Go to your forked repository on GitHub.
+    Switch to the branch containing your changes (e.g., my-changes).
+    Click the "New pull request" button.
+    Provide a clear description of your changes in the pull request description.
+    Click the "Create pull request" button.
+
+For any help or feedback please reachout to me adityanerves@gmail.com
+    
