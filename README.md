@@ -40,8 +40,36 @@ The Todo App is built using the following technologies:
 
 ### Drag-and-Drop Tasks
 
-Tasks can be dragged and dropped between different categories (Todo, In Progress, Review, Completed).
-To move a task, click and hold on the task, then drag it to the desired category.
+The Todo App allows you to easily organize your tasks by dragging and dropping them between different categories. Here's how the drag-and-drop functionality works:
+
+1. **Drag Start:** 
+   - To move a task, click and hold on the task you want to move. 
+   - While holding the mouse button, drag the task to the desired category.
+
+2. **Drop:**
+   - Once you've dragged the task to the desired category, release the mouse button to drop the task into that category.
+
+3. **Updating Status:**
+   - When you drop a task into a new category, its status is automatically updated to reflect its new position.
+   - For example, if you drag a task from the "Todo" category to the "In Progress" category, its status will change from "Todo" to "In Progress".
+
+### Usage of localStorage
+
+The Todo App utilizes localStorage to persist task data locally in the user's browser. This allows users to access their tasks even after refreshing the page or closing the browser. Here's how localStorage is used in the application:
+
+1. **Initial Loading:**
+   - When the Todo App is loaded, it checks localStorage for any existing task data.
+   - If task data is found, it is loaded into the application's state.
+
+2. **Updating Data:**
+   - Whenever a task is added, removed, or moved between categories, the application updates the task data stored in localStorage.
+   - This ensures that the latest task information is always saved and accessible to the user.
+
+3. **Persistence:**
+   - Task data stored in localStorage persists across browser sessions.
+   - Users can close the browser and return to the application later to find their tasks exactly as they left them.
+
+By using localStorage, the Todo App provides a seamless and persistent task management experience for users.
 
 ### Add New Task
 

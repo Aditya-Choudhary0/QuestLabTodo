@@ -69,15 +69,17 @@ const TodoApp = () => {
                 {statuses.map((status) => (
                     <div
                         key={status}
+                        className={`p-4 m-2 rounded-lg shadow-lg ${status === "todo" ? "bg-red-100" : status === "inProgress" ? "bg-orange-100" : status === "review" ? "bg-yellow-100" : "bg-green-100"}`}
                         onDragOver={handleDragOver}
                         onDrop={(e) => handleDrop(e, status)}
                     >
-                        <h2>{status.charAt(0).toUpperCase() + status.slice(1)}</h2>
-                        <ul>
+                        <h2 className="text-lg font-bold mb-3">{status.charAt(0).toUpperCase() + status.slice(1)}</h2>
+                        <ul className="list-none p-0 m-0 border border-gray-400 min-h-40">
                             {tasks[status].map((task) => (
                                 <li
                                     key={task.id}
                                     id={task.id}
+                                    className={`bg-gray-300 border border-gray-500 cursor-grab p-4 m-2 bg-opacity-20 flex justify-between items-center rounded-xl`}
                                     draggable
                                     onDragStart={(e) => handleDragStart(e, task.id, task.status)}
                                 >
@@ -106,13 +108,15 @@ const TodoApp = () => {
                                     type="text"
                                     name="label"
                                     placeholder="Enter new task"
+                                    className="mt-3 p-2 border border-gray-400 rounded"
                                 />
                                 <button
                                     type="submit"
+                                    className="mt-2 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded"
                                 >
                                     Add Task
                                 </button>
-                            </form>
+                            </form> 
                         )}
                     </div>
                 ))}
