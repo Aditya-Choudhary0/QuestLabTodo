@@ -98,7 +98,12 @@ const TodoApp = () => {
                     >
                         <div className="flex justify-between flex-col h-full">
                             <div>
+                                <div className="flex justify-between">
                                 <h2 className="text-lg font-bold mb-3">{status.charAt(0).toUpperCase() + status.slice(1)}</h2>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 6">
+                                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/>
+                                </svg>
+                                </div>
                                 <ul className="list-none p-0 m-0 min-h-40">
                                     {tasks[status].map((task) => (
                                         <li
