@@ -63,20 +63,20 @@ The Todo App utilizes localStorage to persist task data locally in the user's br
    - When the Todo App is loaded, it checks localStorage for any existing task data.
    - If task data is found, it is loaded into the application's state.
 
-![home](https://github.com/Aditya-Choudhary0/QuestLabTodo/assets/113030961/70500312-4166-49d7-8154-f8848b7327f6)
+![home](https://github.com/Aditya-Choudhary0/QuestLabTodo/assets/113030961/1727005a-ccd8-4b9e-9997-4f851492027c)
+
 
 2. **Updating Data:**
    - Whenever a task is added, removed, or moved between categories, the application updates the task data stored in localStorage.
    - This ensures that the latest task information is always saved and accessible to the user.
-
-![localStorage](https://github.com/Aditya-Choudhary0/QuestLabTodo/assets/113030961/274f1ae8-0f5d-4c41-ba8a-82e249a834c8)
 
 
 3. **Persistence:**
    - Task data stored in localStorage persists across browser sessions.
    - Users can close the browser and return to the application later to find their tasks exactly as they left them.
 
-![localStorage2](https://github.com/Aditya-Choudhary0/QuestLabTodo/assets/113030961/f8545eb6-5f43-49d8-a1c8-012bef060958)
+![local1](https://github.com/Aditya-Choudhary0/QuestLabTodo/assets/113030961/8da2c49d-daf0-4710-aa8d-8fc3ed639ef3)
+
 
 Using localStorage, the Todo App provides users with a seamless and persistent task management experience.
 
@@ -88,7 +88,8 @@ Enter the task label in the input field and click the "Add Task" button to add i
 ### Remove Task
 
 Each task has a "Remove" button that lets you delete the task from the list.
-![remove](https://github.com/Aditya-Choudhary0/QuestLabTodo/assets/113030961/5749cff3-37c8-4e23-81ea-38155c90b655)
+
+![remove](https://github.com/Aditya-Choudhary0/QuestLabTodo/assets/113030961/9d1cf15c-d654-4864-9dee-bad09a81fd6b)
 
 After clicking the remove button the existing task is removed from the list in the local system.
 
